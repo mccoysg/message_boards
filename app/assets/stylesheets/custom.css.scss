@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+$grayMediumLight: #eaeaea;
+
 html {
   overflow-y: scroll;
 }
@@ -18,13 +20,13 @@ textarea {
 
 .center {
   text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
-.center h1 {
-  margin-bottom: 10px;
-}
 
-
+/* header */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -42,7 +44,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $grayLight;
 }
 
 p {
@@ -54,18 +56,19 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
+/* Content */
 
 #top_nav {
     padding: 0px;
@@ -101,6 +104,31 @@ p {
     border: 1px solid black;
 }
 
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover { 
+      color: $grayDarker;
+    }
+  }  
+  small { 
+    float: left; 
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
 
 /* Helper styles */
 .bclear {
@@ -108,7 +136,7 @@ p {
 }
 
 body {
-  	background: url("http://payload83.cargocollective.com/1/0/128/3962025/60603_3260_Point660_905.jpg") fixed; background-size: 100%;
+  	background: url("http://payload69.cargocollective.com/1/0/128/3692469/menno_aden_box_I_905.jpg") fixed; background-size: 100%;
 }
 
 div {
