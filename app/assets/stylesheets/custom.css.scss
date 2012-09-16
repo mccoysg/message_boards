@@ -1,0 +1,120 @@
+@import "bootstrap";
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#top_nav {
+    padding: 0px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#top_nav h1 img {
+    vertical-align:middle;
+}
+
+#content {
+    padding: 5px 5px 5px 5px;
+    clear: both;
+}
+
+#content h1 {
+    font-size: 14pt;
+}
+
+#content h1#page_title {
+    text-align:center;
+    margin-top: 0px;
+}
+
+#content table {
+    width: 100%;
+    margin: 20px auto;
+}
+#wrapper {
+    width: 1400px;
+    margin: 25px auto;
+    border: 1px solid black;
+}
+
+
+/* Helper styles */
+.bclear {
+    clear: both;
+}
+
+body {
+  	background: url("http://payload83.cargocollective.com/1/0/128/3962025/60603_3260_Point660_905.jpg") fixed; background-size: 100%;
+}
+
+div {
+  max-width: 800px;
+  background: rgba(10,10,10,0.5);
+  color: #ccc;
+  margin: 0 auto;
+  padding: 0px;
+}
