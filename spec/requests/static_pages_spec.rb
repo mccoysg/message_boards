@@ -4,12 +4,12 @@ describe "Static Pages" do
 
 describe "Home Page" do
     it "should have the content 'Home'" do
-      visit '/static_pages/home'
+      visit 'root_path'
       page.should have_content('Home')
     end
     
     it "should have the right title" do
-      visit '/static_pages/home'
+      visit 'root_path'
       page.should have_selector('title',
                         :text => "Message Boards | Home")
     end
@@ -17,12 +17,12 @@ describe "Home Page" do
   
 describe "Help Page" do
   it "should have the content 'Help" do
-    visit '/static_pages/help'
+    visit 'help_path'
     page.should have_content ('Help')
    end
    
     it "should have the right title" do
-       visit '/static_pages/help'
+       visit 'help_path'
        page.should have_selector('title',
                          :text => "Message Boards | Help")
    end
@@ -30,12 +30,12 @@ describe "Help Page" do
  
  describe "About page" do
      it "should have the content 'About'" do
-       visit '/static_pages/about'
+       visit 'about_path'
        page.should have_content('About')
      end
      
       it "should have the right title" do
-         visit '/static_pages/about'
+         visit 'about_path'
          page.should have_selector('title',
                            :text => "Message Boards | About")
     end
