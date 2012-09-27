@@ -44,6 +44,23 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        session[:user_id] = @user.id
+        
+        User.find_by_id(session[:user_id])
+        
+        {user_id: 1}
+        session.delete(:session_id)
+        {}
+        session[:user_id] #=> nil
+        session.has_key?(:user_id) #=> false
+        
+        
+        {user_id: 1}
+        session[:user_id] = nil
+        {user_id: nil}
+        session[:user_id] #=> nil
+        session.has_key?(:user_id) #=> true
+        
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else
