@@ -41,6 +41,14 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(params[:user])
+    if @user.save
+      flash[:success] = "Welcome to the Message Boards!"
+      redirect_to @user
+    else
+      render 'new'
+    end
+  end
+
 
     respond_to do |format|
       if @user.save
@@ -68,7 +76,6 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
-  end
 
   # PUT /users/1
   # PUT /users/1.json
